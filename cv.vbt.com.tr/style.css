@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #e6e5d0;
+}
+
+body .Container {
+  background-color: #f6f6f6;
+  display: block;
+  text-align: center;
+  margin: 24px auto 24px auto;
+  -webkit-box-shadow: 0px 4px 40px 0px #00000040;
+          box-shadow: 0px 4px 40px 0px #00000040;
+  height: 1029px;
+  width: 431px;
+  left: 385px;
+  border-radius: 10px;
+}
+
+body .Container .LogoArea .VectorLeft {
+  height: 33.2813720703125px;
+  width: 54.546356201171875px;
+  left: 434px;
+  border-radius: 0px;
+  margin-right: -60px;
+  margin-bottom: 20px;
+}
+
+body .Container .LogoArea .VectorRight {
+  width: 106.17px;
+  height: 64.75px;
+  border-radius: 0px;
+}
+
+body .Container .LogoArea .LetterV {
+  width: 62.84px;
+  height: 71.99px;
+  margin-left: 10px;
+}
+
+body .Container .LogoArea .LetterB {
+  width: 70.12px;
+  height: 70.06px;
+  margin-left: -10px;
+}
+
+body .Container .LogoArea .LetterT {
+  margin-top: 20px;
+  width: 72px;
+  height: 72px;
+  margin-left: -15px;
+}
+
+body .TextArea {
+  position: absolute;
+  width: 342px;
+  height: 135px;
+  margin-left: 45px;
+  color: #252525;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 30px;
+}
+
+body .DragDrop {
+  background: #fafafa;
+  border: 1px dashed #bdbdbd;
+  border-radius: 10px;
+  width: 342px;
+  height: 149px;
+  margin-top: 180px;
+  margin-left: 45px;
+}
+
+body .DragDrop .DragDropInside {
+  border: 1px solid #6b5acc;
+  width: 57.69px;
+  height: 48.83px;
+  background: #fafafa;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+body .DragDrop .DragDropInside .ArrowUp {
+  margin-top: 10px;
+}
+
+body .ButtonUpload {
+  width: 342px;
+  height: 45px;
+  background: #6b5acc;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body .SelectBox {
+  margin-top: 20px;
+  width: 341.63px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #8b8b8b;
+}
+
+body .overflow-auto {
+  overflow-y: scroll;
+  position: absolute;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 342px;
+  height: 317px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+body .overflow-auto .TagsForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6d6d6d;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  width: 50%;
+  text-align: left;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+body .overflow-auto .TagsForm .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input:checked ~ .checkmark {
+  background: #6b5acc;
+}
+
+body .overflow-auto .TagsForm .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 3px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+body .overflow-auto .TextArea2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+  color: #8b8b8b;
+  margin-bottom: 10px;
+}
+
+body .CheckBoxArea {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6d6d6d;
+}
+
+#SubmitButton {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+  width: 342px;
+  height: 45px;
+  border-radius: 10px;
+  background: #172531;
+  margin-top: 350px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
